@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javavscripts gallery images </title>
+	<style type="text/css">
+	
+.main-div1 img{
+	position: relative;
+	height:auto;
+	width:50%;
+	background-size: cover;
+	background-position: center;
+	object-fit: cover;
+     transition: 0.5s;
+	}
+
+.img-box1{
+	height: 40%;
+	width:80%;
+	position: relative;
+	
+}
+ .nm{
+height: 100px;
+width: 150px;	
+
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="main-div1">
+
+<img src="1.jpeg" id="bs">
+
+</div>
+
+<div class="imag-box1">
+<img src="1.jpeg"class="nm"onclick="as()">
+<img src="2.jpeg"class="nm"onclick="af()">
+<img src="3.jpeg"class="nm"onclick="ah()">
+<img src="4.jpeg"class="nm"onclick="au()">
+<img src="1.jpeg"class="nm"onclick="aj()">
+
+
+	</div>
+	<script type="text/javascript">
+		
+		function as(argument) {
+			document.getElementById("bs").src="1.jpeg";
+			
+		}
+		function af(){
+			document.getElementById("bs").src="2.jpeg";
+		}
+		function ah(argument) {
+			document.getElementById("bs").src="3.jpeg";
+		}
+		function au(argument) {
+		   document.getElementById("bs").src="4.jpeg";
+		}
+		function aj(argument) {
+			document.getElementById("bs").src="5.jpeg";
+		}
+	</script>
+</body>
+</html>

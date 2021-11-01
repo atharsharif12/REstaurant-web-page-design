@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<style>
+		
+		.main{
+			position: relative;
+			height: 500px;
+			width: 400px;
+			background-color: brown;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+		.cl{
+		position: absolute;top:40px;
+		margin: 10px;
+		}
+		input{
+			height: 30px;
+			width:300px;
+			text-align: center;
+			margin-bottom: 20px;
+			padding: 8px;
+			font-size:20px;
+			border:none;
+			outline: none;
+			border-radius: 10px;
+			display:initial;
+		}
+		#btn{
+			height: 40px;
+			width:100%;
+			background-color: blue; border-radius: 10px;
+			opacity: 1;
+			cursor: pointer;
+			font-size: 20px;
+			color:white;
+
+		}
+		#btn:hover{
+			height: 45px;
+			width:100%;
+			color:black;
+			background-color: #555;
+			border:none;
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+<h1 style="color:white; margin:10px;">form validation</h1>
+<form class="cl" name="forms">
+
+	<input type="text" name="fname" placeholder="enter your name" required><span id="sp"></span><br>
+	<input type="text" name="email" placeholder="enter your email"><span id="sp2"></span><br>
+	<input type="number" name="num" placeholder="enter your mobile number"><span id="sp3"></span><br>
+	<input type="password" name="pass" placeholder="enter your password"><span id="sp4"><img src="icon.jpg"onclick="show()"></span><br>
+	<input type="passowrd" name="cpass" placeholder="enter your c-password"><span id="sp5"></span><br>
+	
+
+	<input type="button" name="btn" value="submit" id ="btn" onclick="fj()">
+
+
+
+
+</div>
+<script type="text/javascript">
+	function fj(argument) {
+		var x= document.forms.fname.value;
+		 
+		 if(x.length>5){
+			document.getElementById("sp").innerHTML=" at least  ";
+		}
+		
+		else if(x.length==5){
+			document.getElementById("sp").innerHTML=" ";
+		}
+		else{
+			document.getElementById("sp").innerHTML="fill this form";
+		}
+	}
+ function show(argument) {
+ var  x  = document.forms.pass.value;
+ 	
+ }
+</script>
+</body>
+</html>

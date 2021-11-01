@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ludo</title>
+<style type="text/css">
+	.mn{
+		
+	    height: 400px;
+	    width: 330px;
+	    background-color: gray; 
+		position: relative;
+		margin-top: 130px;
+		margin-left: 140px;
+
+	}
+	#nf{
+		height: 60px;
+		width: 100px;
+		background-color: red;
+		border-radius: 7px;
+		text-align: center;
+		padding-top: 15px;
+		font-size:40px;
+		margin-left: 10px;
+	}
+	#nh{
+		height: 60px;
+		width: 100px;
+		background-color: red;
+		border-radius: 7px;
+		text-align: center;
+		padding-top: 15px;
+		font-size:40px;
+		margin-left: 200px;
+		
+	
+	}
+	#ph{
+		margin-left: 200px;
+		margin-top: -140px;
+		font-size: 30px;
+		color:white;
+	}
+    #bg{
+    	font-size: 30px;
+    	color:white;
+    	margin-left: 8px;
+    }
+    #nm{
+    	margin-top: 50px;
+    	margin-left: 65px;
+    	height: 40px;
+    	width: 190px;
+    	background-color: blue;
+    	color:white;
+    	font-size: 23px;
+    	border-radius: 5px;
+    }
+    h1{
+    	margin-left:54px;
+    	color:tomato;
+    }
+
+</style>
+</head>
+<body>
+<div class="mn">
+<h1 id="gd">LUDU GAME</h1>	
+<p id="bg">player 1</p>
+<div id="nf">1
+
+</div>
+<p id="ph">player 2</p>
+<div class="bo" id="nh">2
+
+</div>
+
+<input type="button" name="" value="click" onclick="myg()" id="nm">
+
+</div>
+<script type="text/javascript">
+function myg(argument) {
+		var x = Math.random()*6;
+		x= Math.floor(x)+1;
+		document.getElementById("nf").innerHTML=x;
+		var y = Math.random()*6;
+		y = Math.floor(y)+1;
+		document.getElementById("nh").innerHTML=y;
+
+        if(x>y){
+        	document.getElementById("gd").innerHTML="PLAYER 1 WON";
+        }
+       
+        else if(y>x){
+        	document.getElementById("gd").innerHTML="PLAYER 2 WON"
+        }
+        else{
+        	document.getElementById("gd").innerHTML="Match Drow";
+        }
+
+
+
+	}	
+
+var c = Math.random()*100;
+var e = Math.floor(c);
+console.log(e);
+
+
+
+
+
+
+</script>
+</body>
+</html>

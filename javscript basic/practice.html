@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reverse </title>
+	<style type="text/css">
+		input{
+			margin-left: 80px;
+			padding:10px;
+			width:140px;
+			font-size: 15px;
+		}
+		.mn{
+			height: 500px;
+			width:450px;
+			position: relative;
+			margin-top: 30px;
+			margin-left: 40px;
+			background-color: rgba(100,169,342,0.9);
+			
+		}
+		h2{
+
+            height: 70px;
+            width:100%;
+            background-color: red;
+            color:white;
+            padding-top:5px;
+            text-transform: uppercase;
+           
+
+		}
+		#first{
+		position: absolute;
+		margin-left: 10px;
+		border:none;
+		outline:none;
+		border-bottom:5px solid gray;
+		border-left:5px solid pink;
+		border-right:5px solid green;
+		border-top:5px solid yellow;
+		font-size: 20px;
+		background-color: cyan;
+		padding-left:30px;
+		}
+		#lov{
+			margin-left: 250px;
+             border:none;
+		outline:none;
+		border-bottom:5px solid gray;
+		font-size: 20px;
+		border-left:5px solid pink;
+		border-right:5px solid green;
+		border-top:5px solid #6754;
+		background-color: cyan;
+		padding-left:25px;
+		}
+		#btn{
+			margin-top: 40px;
+			margin-left: 60px;
+			border-radius: 4px;
+			background-color: green;
+			color:white;
+		     text-transform: uppercase;
+		     font-size:20px;
+		     width:300px;
+
+		}
+		#pet{
+			width:100px;
+			margin-top: 60px;
+			margin-left: 160px;
+			border-radius: 4px;
+			background-color: white;
+			 color:black;
+		     border:none;
+		     outline:none;
+		     border-bottom:5px solid gray;
+		     font-size:20px;
+		     padding-left:20px;
+		     padding-right: 20px;
+		}
+
+
+	</style>
+</head>
+<body>
+<h1 style="text-align: center;">reverse string in javascripts type below</h1>
+<input type="text" name="" id="reverseString"onKeyup="myf()">
+<input type="text" name="" id="final">
+
+
+<script type="text/javascript">	
+function myf(argument) {
+	var str = document.getElementById("reverseString").value;
+	var newString = " ";
+	for(var i=str.length-1; i>=0; i--){
+		newString= newString+str[i];
+	}
+	document.getElementById("final").value=newString;
+
+}
+
+
+</script>
+<div class="mn">
+<h2 style="text-align: center;"> love calculator</h2><br><br>
+
+<input type="text" name="" placeholder="your name" id="first" onmouseover="myo()">
+<input type="text" name="" placeholder="love name" id="lov">
+
+<input type="button" name="" value="click" id="btn" onclick="calculate()"><br><br>
+<input type="text" name="" placeholder="percentage" id="pet">
+<h3 style="text-align: center; margin-top: 35px;height: 60px; width:100%; background-color: pink; padding-top:20px; font-size: 25px; text-transform: uppercase;">God bless you everyone</h3>
+</div>
+
+<script type="text/javascript">
+	
+function calculate(argument) {
+	var nam = document.getElementById("first").value;
+	var nas = document.getElementById("lov").value;
+	if(nam==""){
+       alert("fill this your name");
+	}
+	else if(nam.length<=2){
+        alert("at least three charcter to fill");
+	}
+
+    else if(nas==""){
+    	alert("fill this love name");
+    }
+    else if(nas.length<=2){
+    	alert("at least three character to fill input text")
+    }
+    else{
+
+	
+	var data = Math.random() *100;
+	data = Math.floor(data);
+	document.getElementById("pet").value= data + "%";
+
+	}
+
+
+
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>
