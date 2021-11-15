@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    box-sizing: border-box;
+   overflow-x: hidden;
+   max-width: 100%;
+
+}
+.header{
+    height: fit-content;
+     width: 100%;
+    background-color: blue;
+    color:white;
+    overflow: hidden;
+   position:relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+.logo{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+nav ul{
+   display: flex;
+   
+}
+nav ul li{
+    list-style: none;
+     margin: 0 10px; 
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 0 10px;
+    text-transform: capitalize;
+
+}
+nav a:hover{
+    border-bottom: 2px solid #cbcad3;
+}
+.grid{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+   height: 100%;
+   padding: 2rem;
+}
+.stats-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    grid-template-columns: repeat(3,1fr);
+}
+.stats  h1{
+    text-align: center;
+    padding-top: 1em;
+    color:black;
+}
+.stats-content img{
+    height: 60px;
+    width: 90px;
+}
+
+.stats-box{
+    text-align: center;
+    margin-top: 30px;
+    padding: 1em;
+    box-shadow: 0px 0px 10px #ddd;
+}
+
+.grid2{
+    background-color: rgb(247, 244, 244);
+    padding: 1rem;
+    margin: 10px;
+     height: 200px;
+     width: 300px;
+    box-shadow: 0 3px 10px #eee;
+    color:#333;
+    border-radius: 10px;
+}
+.input-group{
+   width: 100%;
+
+}
+.input-group input{
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    padding: 0.3rem;
+    border: none;
+    border-bottom: 3px solid #eee;
+}
+.grid2{
+ height: 87%;
+}
+.grid2 h3{
+    font-size: 1.6rem;
+    
+}
+.input-group button{
+    width: 200px;
+    padding: 0.3rem;
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    font-size: 1.2rem;
+    color:white;
+    border: none;
+}
+.grid1 h3{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   padding: 0.3rem;
+   font-size: 1.8rem;
+   
+}
+.grid1 button{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 0.5rem;
+    width: 140px;
+    background-color: gray;
+    color:white;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+
+}
+.grid1 button:hover{
+  background-color: saddlebrown;
+}
+.grid1{
+    padding-left: 1em;
+    text-align: center;
+}
+.grid1 p{
+    padding: 1em;
+    font-size: 1em 0;
+}
+
+.showcase::before,.showcase::after{
+    content: "";
+    position: relative;
+    height: 100px;
+   border-bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: red;
+}
+/* now style three div of box */
+.content-box1{
+max-width: 100%;
+padding: 1em;
+height: 100%;
+background-color: rgb(42, 85, 81);
+text-align: center;
+}
+.three-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 1em;
+    height: 100%;
+   
+
+}
+.im3{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    padding: 2em;
+    background-color:black;
+    color:white;
+    max-width: 57%;
+}
+.text2,.text3{
+    background-color: white;
+    padding: 1em;
+}
+   
+
+.cloud{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2em;
+    padding: 2em;
+    background-color: blue;
+    color:white;
+    justify-content: center;
+}
+.cloud img{
+  
+    width: 300px;
+    height: auto;
+   
+
+}
+.cloud .cloud-text{
+   padding-left: 1em;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    
+}
+.cloud .cloud-text button{
+    margin-top: 1em;
+    width:120px;
+    padding: 0.5rem;
+    background-color: #eee;
+    border-radius: 10px;
+    background-color:gray;
+    color:white;
+    outline: none;
+    border: none;
+}
+.sug{
+    padding: 2em;
+}
+.sug-box{
+   margin: 0 3em;
+   
+}
+img{
+    height: 80px;
+    width: 100px;
+    border-radius: 30px;
+}
+.logo-box{
+    background-color: rgb(241, 238, 233);
+    overflow: hidden;
+    padding: 1em;
+}
+.flex-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+h3{
+    padding-top: 1em;
+}
+.card-logo{
+   margin: 0.3rem 2rem;
+  
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px #cbcad3;
+   background-color: white;
+}
+h2{
+    text-align: center;
+    padding: 1em;
+}
+.footer-content{
+display: flex;
+position: relative;
+width: 100vw;
+height: 100%;
+justify-content: space-around; 
+padding-top: 0.5em; 
+padding-bottom: 0.5em; 
+background-color: black;
+
+}
+.text{
+    margin-top: 40px;
+    color: white;
+}
+.social-icon img{
+    height: 20px;
+    width: 50px;
+    margin-top: 40px;
+}
+.anchor ul li{
+    list-style: none;
+    margin: 0.3em;
+}
+.anchor ul li a{
+  text-decoration: none;
+}
+/* extra add style  */
+.grid3{
+    justify-self: flex-end;
+    
+}
+.grid4{
+    text-align: left;
+}
+
+.grid3 img{
+    height: 100%;
+    width: 209px;
+  margin-right: 80px;
+    
+}
+.cont{
+    height: 100%;
+    max-width: 100%;
+    padding: 1em;
+    display: grid;
+    background-color: white;
+    
+    justify-self: flex-end;
+    gap:1em;
+  
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+     
+}
+
+.carde{
+   border-radius: 10px;
+   box-shadow: 0px 0px 19px wheat;
+   padding: 2em;
+}
+@media(max-width:596px){
+
+
+    .grid{
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
+@media(max-width:459px){
+    .navbar{
+       flex-direction: column;
+       
+    }
+    .navbar li{
+        margin: 1em 0.5em;
+        
+    }
+    .navbar a{
+        
+        padding: 00.3em;
+    }
+    .grid1, .grid2{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media(max-width:490px){
+    .footer-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

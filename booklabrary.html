@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book labrary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            background-color: black;
+        }
+
+        .input-box {
+
+            padding: 1rem;
+            border: 1px solid black;
+            border-radius: 10px;
+            background: linear-gradient(65deg, pink, violet, cyan);
+        }
+
+        .input-box input {
+            padding: 0.5rem;
+            border-radius: 10px;
+            border: none;
+        }
+
+        #sp1 button {
+            padding: 0.4rem;
+
+            border-radius: 6px;
+            background: linear-gradient(90deg, red, pink, yellow);
+        }
+
+        .logo {
+            padding: 1rem;
+            background: linear-gradient(orange, violet, cyan);
+            border-radius: 10px;
+        }
+
+        .logo span button {
+            padding: 0.4rem;
+            width: 100px;
+            border-radius: 7px;
+            font-size: 1.2rem;
+            border: none;
+            background: linear-gradient(45deg, white, pink, blue);
+        }
+
+        #for6 {
+            position: relative;
+            left: 80px;
+            top: 50px;
+            height: 400px;
+            width: 400px;
+
+        }
+
+        #for6 label {
+            padding: 10px;
+
+
+        }
+
+        #for6 input {
+            padding: 0.5rem;
+            border: none;
+            border-bottom: 2px solid violet;
+            outline: none;
+        }
+
+        #for6 button {
+            width: 20%;
+            padding: 0.3rem;
+            background-color: rgb(34, 34, 251);
+            border-radius: 10px;
+            color: cyan;
+        }
+
+        td {
+            width: 300px;
+            padding: 0.3rem;
+            border: none;
+            border-bottom: 1px solid bisque;
+            border-left: 1px solid violet;
+            box-shadow: 0px 0px 6px green;
+        }
+
+        th {
+            width: 300px;
+            padding: 0.3rem;
+            border: none;
+            border-bottom: 1px solid bisque;
+            border-left: 1px solid violet;
+            box-shadow: 0px 0px 6px green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+
+            <h1>atharlabrary <span><button>home</button></span></h1>
+
+        </div>
+        <div class="input-box">
+            <input type="text"><span id="sp1"><button>search</button></span>
+        </div>
+    </div>
+    <div class="content">
+        <form action="" id="for6">
+            <label>book name</label>
+            <br><input type="text" id="a1"><br>
+            <br>
+            <label for=""> author name</label>
+            <br><input type="text" id="a2"><br>
+            <br><label for="">type</label><br>
+            <input type="text" id="a3"><br>
+            <br><button onclick="storage()">add-book</button>
+        </form>
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>author</th>
+                <th>type</th>
+            </tr>
+    <tbody id="bo1">
+        <tr>
+         <td>
+                  
+         </td>
+         </tr>
+        </tbody>
+        </thead>
+    </table>
+    <script>
+        let x = document.getElementById("for6");
+        let y = document.getElementById("a1").value;
+        let z = document.getElementById("a2").value;
+        let p = document.getElementById("a3").value;
+
+        function storage() {
+            document.getElementById("bo1").innerHTML = "hello world my nanme";
+
+        }
+    </script>
+</body>
+
+</html>

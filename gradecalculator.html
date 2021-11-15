@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grade claculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 430px;
+            width: 400px;
+            position: absolute;
+            left: 100px;
+            background-color: rgb(51, 41, 41);
+            top: 200px;
+            border-radius: 10px;
+
+        }
+
+        .box2 {
+            margin-left: 160px;
+            margin-top: 40px;
+
+        }
+
+        .box2 input {
+            margin: 0.6rem;
+            padding: 0.5rem;
+            width: 85%;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .box2 [type=button] {
+            width: 90%;
+            background: linear-gradient(50deg, red, pink, violet);
+            box-shadow: 0px 0px 10px white;
+
+        }
+
+        .head {
+            position: absolute;
+            top: 35%;
+            left: 5%;
+            color: rgb(116, 177, 26);
+            border-left: 5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="head">
+            <h1>student</h1>
+            <h1>grade</h1>
+            <h1>calcacy</h1>
+        </div>
+        <form action="" class="box2">
+            <input type="text" placeholder="web designing" id="f1">
+            <input type="text" placeholder="mathe" id="f2">
+            <input type="text" placeholder="physics" id="f3">
+            <input type="text" placeholder="chemistry" id="f4">
+            <input type="text" placeholder="english" id="f5">
+            <input type="button" value="show-percentage" onclick="calculate()">
+            <p id="pa" style="color:white;position: relative; margin-top: 20px; margin-left: -80px; font-size:1.4rem;">
+            </p>
+        </form>
+    </div>
+    <script>
+
+        function calculate() {
+            var x = document.getElementById("f1").value;
+            var y = document.getElementById("f2").value;
+            var z = document.getElementById("f3").value;
+            var w = document.getElementById("f4").value;
+            var p = document.getElementById("f5").value;
+            let grade = '';
+            let totalgrade = parseFloat(x) + parseFloat(y) + parseFloat(z) + parseFloat(w) + parseFloat(p);
+            alert(totalgrade);
+            let percentage = (totalgrade / 500) * 100;
+            alert(percentage + "%");
+            if (percentage <= 100 && percentage >= 80) {
+                grade = 'A';
+            }
+            else if (percentage <= 79 && percentage >= 60) {
+                grade = 'B';
+            }
+            else if (percentage <= 59 && percentage >= 40) {
+                garde = 'C';
+            }
+            else {
+                garde = "FAIL";
+            }
+            document.getElementById("pa").innerHTML = `out of 500. your percentages is ${percentage}% and grade is ${grade} `;
+
+        }
+    </script>
+</body>
+
+</html>

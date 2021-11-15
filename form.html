@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and register-form</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .hero{
+        height: 100vh;
+        width:100%;
+        background: linear-gradient(65deg, violet,white,gray);
+    }
+    .main{
+        position: relative;
+        left:20%;
+        top:20%;
+        height: 350px;
+        width:300px;
+    
+        background-color: white;
+    }
+    .btn{
+        padding: 1rem;
+        position: relative;
+    }
+    .btn1{
+        position: absolute;
+        right: 20px;
+        top:15px;
+    }
+    .btn button{
+        padding: 0.7rem;
+        width:110px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(45deg,pink,red,blue);
+      box-shadow: 0px 0px  10px rgb(123,27,54);
+    }
+    .btn1 button{
+        padding: 0.7rem;
+        width:110px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        background: linear-gradient(45deg,pink,red,blue);
+      box-shadow: 0px 0px  10px rgb(123,27,54);
+    }
+    .form-box{
+        height: 200px;
+        width:100%;
+        margin: 2rem;
+        position: absolute;
+    }
+    .form-box input{
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+       outline: none;
+        border: none;
+        width: 80%;
+        border-bottom: 2px solid black;
+    }
+    #for3{
+        position: absolute;
+        left:400px;
+        height: 300px;
+        top:80px;
+        background-color: red;
+    }
+    #for1{
+        display: none;
+    }
+    .bt4{
+        position: absolute;
+        bottom: 10px;
+      left:0px;
+        width:80%;
+        padding: 0.5rem;
+        border-radius: 10px;
+        background-color: blue;
+        border: none;
+        outline: none;
+        box-shadow: 0px 0px 10px rgb(123, 234,456);
+    }
+   
+</style>
+</head>
+<body>
+ <div class="hero">
+     <div class="main">
+         <div class="btn">
+             <button onclick="login()" id="lo">Login</button>
+         </div>
+         <div class="btn1">
+             <button onclick="register()" id="ro">Register</button>
+         </div>
+         <form action="" class="form-box" id="form8">
+             <input type="text" placeholder="user id">
+             <input type="password" placeholder="enter password">
+          <span>remember password</span><input type="checkbox" style="position: relative; top:-18px; left:20px;">
+            <button class="bt4">Login</button> 
+            </form>
+           <!--second register-->
+           
+           <form action="" class="form-box" id="for1">
+            <input type="text" placeholder="user id">
+            <input type="email" placeholder="enter email">
+            <input type="password" placeholder="enter password">
+        
+           <button class="bt4">Register</button> 
+           </form>
+          
+     </div>
+     
+ </div> 
+ <script>
+     var x = document.getElementById("lo");
+     var y = document.getElementById("ro");
+     var z= document.getElementById("form8");
+      var w = document.getElementById("for1");
+     function login(){
+       if(z.style.display != 'none'){
+           z.style.display='none';
+       }
+       else{
+           z.style.display='block';
+       }
+     }
+     function register(){
+       if(w.style.display!='none'){
+           w.style.display='none';
+       }
+       else{
+   w.style.display='block';
+       }
+     }
+    
+ </script>  
+</body>
+</html>
