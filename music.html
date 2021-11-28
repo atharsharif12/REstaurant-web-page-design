@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music-website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+            
+            background-color: blue;
+            align-items: center;
+            
+        }
+        .logo{
+            font-size: 2em;
+            color:white;
+            font-family: sans-serif;
+            text-shadow: 1px 1px 1px green;
+        }
+        .navbar ul{
+           display: flex;
+           align-items: center;
+           
+        }
+        .navbar ul li{
+            list-style: none;
+            margin: 0.3em 1em;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color:white;
+            text-transform: capitalize;
+        }
+        .navbar ul li a:hover{
+            color:red;
+        }
+        .navbar{
+           display: block;
+            
+        }
+        span{
+            font-size: 2em;
+            color:white;
+            display: none;
+        }
+        @media(max-width:700px){
+       .header{
+           flex-direction: column;
+           flex-wrap: wrap;
+        }
+        .sce{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+    }
+    @media(max-width:390px){
+        ul{
+            flex-direction: column;
+        }
+       
+    }
+    .sce{
+        height: 86vh;
+        width:100%;
+        background-color: yellow;
+        display: flex;
+        
+        align-items: center;
+    }
+    .he{
+        margin-left: 100px;
+        font-size: 3em;
+        color:blue;
+        text-shadow: 3px 1px 1px green;
+        font-family: sans-serif;
+    } 
+    img{
+        height: 100px;
+        width: 100px;
+        animation: round 1s linear infinite;
+        animation-play-state: running;
+    }
+    @keyframes round{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+   
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">     
+        <div class="logo">Gana</div>
+        
+        <div class="navbar">
+            <ul>
+         <li><a href="">home</a></li>
+         <li><a href="">about</a></li>
+         <li><a href="">contact</a></li>
+         <li-+><a href="">stop</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<div class="sce">
+    <img src="image/scala.png" alt="" id="im">
+  
+    <div class="he">the real <br>music <br>world</div>
+    <div class="box">
+        <img src="image/server.png" alt="" id="im">
+      <h3>summery song</h3>
+    </div>
+    
+</div>
+
+<script>
+
+
+</script>    
+</body>
+</html>

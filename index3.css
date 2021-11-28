@@ -5,13 +5,14 @@
 }
 body{
     box-sizing: border-box;
-   overflow-x: hidden;
-   max-width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
 .header{
     height: fit-content;
-     width: 100%;
+     width: 100vw;
     background-color: blue;
     color:white;
     overflow: hidden;
@@ -162,7 +163,7 @@ nav a:hover{
 }
 /* now style three div of box */
 .content-box1{
-max-width: 100%;
+max-width: 100vw;
 padding: 1em;
 height: 100%;
 background-color: rgb(42, 85, 81);

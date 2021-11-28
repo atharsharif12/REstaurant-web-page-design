@@ -26,6 +26,13 @@
     align-items: center;
     
 }
+@media(max-width:520px){
+    .main{
+        grid-template-columns: 1fr;
+        
+        margin: 0 auto;
+    }
+}
 .inp{
     
    width:30rem;

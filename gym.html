@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym-website-design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        html {
+            /* scroll-behavior: smooth;*/
+
+        }
+
+        img {
+
+            height: 100px;
+            width: 100%;
+        }
+
+        .logo img {
+            height: 60px;
+            width: 70px;
+            margin-left: 1em;
+            border-radius: 20px;
+        }
+
+        .content {
+
+            width: 100%;
+            height: 100%;
+            padding: 1em 0;
+            background: rgb(247, 242, 242);
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .navbar img {
+            filter: blur(-40px);
+            box-shadow: 0px 0px 10px green;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            flex: 1;
+
+        }
+
+        .menu ul li {
+            list-style: none;
+            margin: 0px 16px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 23px;
+
+        }
+
+        .btn-box a {
+            color: black;
+            padding: 0.3em;
+            border: 1px black solid;
+            flex: 1;
+            border-radius: 10px;
+            margin-right: 10px;
+
+        }
+
+        .btn-box a:nth-child(1) {
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-right: 14px;
+        }
+
+        .btn-box a:nth-child(1):hover {
+            background-color: white;
+            color: black;
+            transition: 0.3s all;
+        }
+
+        a:hover {
+            color: salmon;
+        }
+
+        /* about section */
+        .sec1 {
+            width: 100%;
+            height: 600px;
+            margin: auto;
+            background-image: url(image/gym1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1;
+            animation: change 30s linear infinite;
+            animation-delay: 15s;
+        }
+
+        @keyframes change {
+            50% {
+                background-image: url(image/gym2.jpg);
+            }
+
+            70% {
+                background-image: url(image/gym3.jpg);
+            }
+
+            100% {
+                background-image: url(image/gym1.jpg);
+            }
+        }
+
+        .about-container {
+            width: 100%;
+            
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .about-container h2{
+            margin: 0;
+            text-align: left;
+        }
+
+        .bt4 button {
+            padding: 1em 2em;
+            margin-right: 310px;
+            margin-top: 1em;
+            position: relative;
+            float: left;
+            background-color: black;
+            color: white;
+            border: none;
+        }
+
+        .about-container h2 {
+            font-size: 2rem;
+            z-index: 1;
+            color: white;
+            text-shadow: 1px 1px 1px red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* now start about section style */
+        .sec2 {
+            padding: 2em 0em;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+
+        }
+
+         .about-sec2 {
+            width: 100%;
+            display: flex;
+           align-items: center;
+           justify-content: space-around;
+           
+        }
+
+      
+
+        .about-box img {
+            height: 200px;
+            width: auto;
+        }
+
+        .about-box2 {
+            
+           border: 1px solid black;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           box-shadow: 0px 0px 20px rgb(139, 124, 124);
+           flex-basis: 50%;
+           margin-top: 0.3em;
+           padding-bottom: 2em;
+           background:linear-gradient(30deg,blue,red,white)
+        }
+        .about-box2 h2{
+            margin: 0;
+        }
+        .about-box2 p{
+            text-align: center;
+        }
+
+        .about-box2 p {
+            padding-top: 3em;
+            line-height: 20px;
+            font-size: 1.2em;
+            color: orchid;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .about-box2 h2 {
+            color: white;
+            font-size: 3em;
+        }
+
+        /* now service section strat */
+        .sec3 {
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+        }
+
+        .sec3-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+
+
+        }
+
+        .sce3-box {
+            background-color: #eee;
+            margin: 1em 0.5em;
+            padding: 1em;
+        }
+
+        .sce3-box img {
+            height: 190px;
+        }
+
+        .sce3-box button {
+            padding: 0.6em 2em;
+            box-shadow: 0px 0px 10px rgb(139, 124, 124);
+            border: none;
+            border-radius: 10px;
+        }
+
+        .sce3-box button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .sec4 {
+            box-shadow: 0px 0px 20px #eee;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+
+        }
+
+        .product-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 250px;
+            width: 240px;
+            background-color: #eee;
+
+            margin: 1em 0em;
+            box-shadow: 0px 0px 20px rgb(131, 92, 92);
+        }
+
+        .product-box button {
+            margin-top: 1em;
+            padding: 0.4em 4em;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            background-color: cadetblue;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 2em;
+            font-size: 2em;
+            text-shadow: 2px 2px 2px goldenrod;
+        }
+
+        .product-box button:hover {
+            background-color: gray;
+            color: #eee;
+            cursor: pointer;
+        }
+      @media(max-width:390px){
+          .about-box2{
+              padding: 0;
+              margin: 0;
+          }
+      }
+
+        .product-box:hover {
+            transform: translateY(-20px);
+            transition: 0.6s;
+            background-color: white;
+        }
+        /* now add trainer style */
+        .sec5{
+            width: 100%;
+            height: 100%;
+            
+            background-color: red;
+        }
+        .trainer-container{
+            display: flex;
+            
+            justify-content: space-around;
+            text-align: center;
+            
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        @media(max-width:300px){
+           html{
+               width: 100%;
+               margin: auto;
+           }
+           .sec1{
+               height: 100%;
+           }
+           .about-box2{
+               flex-basis: 20%;
+           }
+           
+        }
+        .trainer-box{
+            background-color: white;
+            padding: 2em 2em;
+            margin: 1em 0em;
+            box-shadow: 0px 0px 10px gainsboro;
+        }
+        .trainer-box img{
+            border-radius: 40px;
+            width: 100px;
+        }
+
+
+        @media(max-width:790px) {
+            .about-sec2 {
+                flex-direction: column;
+            }
+        }
+        @media(max-width:500px){
+            .btn-box{
+                display: none;
+            }
+            .navbar{
+               justify-content: stretch;
+               flex-direction: column;
+            }
+            .about-container{
+                justify-content: center;
+                align-items: center;
+              
+            }
+           
+            .about-container h2{
+                text-align: center;
+            }
+            .sec5{
+                height: 100%;
+                width: 100%;
+            }
+            .about-container button{
+                margin: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="navbar">
+            <div class="logo"><img src="image/logogym.png" alt=""></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#about">about</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#service">service</a></li>
+                </ul>
+            </div>
+            <div class="btn-box">
+                <a href="https://retail.onlinesbi.com/retail/login.htm">contact</a>
+                <a href="">lear-more</a>
+                <a href="#product">product</a>
+            </div>
+        </div>
+    </div>
+    <!---now home section start-->
+    <section id="home" class="sec1">
+        <div class="about-container">
+            <h2>real fitness world.<br> you can build natural body with me</h2>
+            <div class="bt4">
+                <button>Read-More</button>
+            </div>
+        </div>
+
+    </section>
+    <!--now add about section  -->
+    <section id="about" class="sec2">
+        <div class="about-sec2">
+            <div class="about-box">
+                <img src="image/ser3.jpg" alt="">
+
+            </div>
+            <div class="about-box2">
+                <h2>introduction page</h2>
+                <p>hello every one i am athar. i am a fitness model and also i have to doing training for fitness and
+                    also i am succesfully doing training.if you are intrested then you can contact
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- now service section strat -->
+    <section id="service" class="sec3">
+        <h1 style="text-align: center; font-size: 2.3em; color:black;padding: 1em;text-shadow: 1px 1px 1px green;">our
+            service</h1>
+        <div class="sec3-content">
+            <div class="sce3-box">
+                <img src="image/serv.jpg" alt="">
+                <button>find-location</button>
+            </div>
+            <div class="sce3-box">
+                <img src="image/gym2.jpg" alt="">
+                <button>find-location</button>
+            </div>
+            <div class="sce3-box">
+                <img src="image/ser3.jpg" alt="">
+                <button>find-location</button>
+            </div>
+            <div class="sce3-box">
+                <img src="image/ser2.jpg" alt="">
+                <button>find-location</button>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- now add product scetion -->
+    <section id="product" class="sec4">
+        <h2>Our-Product</h2>
+        <div class="product-container">
+            <div class="product-box">
+                <img src="image/prod.jpg" alt="">
+                <button>about</button>
+                <button>buy-now</button>
+            </div>
+            <div class="product-box">
+                <img src="image/prod4.jpg" alt="">
+                <button>about</button>
+                <button>buy-now</button>
+            </div>
+            <div class="product-box">
+                <img src="image/prod3.jpg" alt="">
+                <button>about</button>
+                <button>buy-now</button>
+            </div>
+            <div class="product-box">
+                <img src="image/prod6.jpg" alt="">
+                <button>about</button>
+                <button>buy-now</button>
+            </div>
+        </div>
+    </section>
+    <!-- our trainer team  -->
+    <section id="trainer" class="sec5">
+      <div class="trainer-container">
+          <div class="trainer-box">
+           <img src="image/gym1.jpg" alt="">
+           <h3>name:Md athar</h3> 
+
+          </div>
+          <div class="trainer-box">
+            <img src="image/gym3.jpg" alt="">
+            <h3>name:Md alam</h3> 
+ 
+           </div>
+           <div class="trainer-box">
+            <img src="image/gym2.jpg" alt="">
+            <h3>name:suraj</h3> 
+ 
+           </div>
+           <div class="trainer-box">
+            <img src="image/gym2.jpg" alt="">
+            <h3>name:manish</h3> 
+ 
+           </div>
+      </div>  
+    </section>
+</body>
+
+</html>
