@@ -52,6 +52,39 @@
             color:white;
             display: none;
         }
+        #music-section{
+            height: 100%;
+            padding: 10em 0em; 
+            width: 100%;
+            background-color: red;
+            
+          
+           
+        }
+        @media(max-width:700px){
+            #music-section{
+                height: 100%;
+            }
+        }
+        .music-cotainer{
+            display: flex;
+           justify-content: space-around;
+             
+           
+            flex-wrap: wrap;
+            align-items: center;
+            
+
+        }
+        .box{
+            padding: 1em;
+            margin: 20px;
+             padding: 0.5em 3em;
+             background-color: white;
+             box-shadow: 0px 0px 13px #eee;
+            align-self: center;
+           
+        }
         @media(max-width:700px){
        .header{
            flex-direction: column;
@@ -69,38 +102,7 @@
         }
        
     }
-    .sce{
-        height: 86vh;
-        width:100%;
-        background-color: yellow;
-        display: flex;
-        
-        align-items: center;
-    }
-    .he{
-        margin-left: 100px;
-        font-size: 3em;
-        color:blue;
-        text-shadow: 3px 1px 1px green;
-        font-family: sans-serif;
-    } 
-    img{
-        height: 100px;
-        width: 100px;
-        animation: round 1s linear infinite;
-        animation-play-state: running;
-    }
-    @keyframes round{
-        from{
-            transform: rotate(0deg);
-        }
-        to{
-            transform: rotate(360deg);
-        }
-    }
-   
     </style>
-</head>
 <body>
 <div class="container">
     <div class="header">     
@@ -117,17 +119,50 @@
         
     </div>
 </div>
-<div class="sce">
-    <img src="image/scala.png" alt="" id="im">
-  
-    <div class="he">the real <br>music <br>world</div>
+<section id="music-section">
+   <div class="music-cotainer">
     <div class="box">
-        <img src="image/server.png" alt="" id="im">
-      <h3>summery song</h3>
+        <img src="image/csharp.png" alt="">
+        <h3>lamha pyar</h3>
     </div>
-    
-</div>
-
+    <div class="box">
+        <img src="image/python.png" alt="">
+        <h3>lamha pyar</h3>
+    </div>   
+    <div class="box">
+        <img src="image/ruby.png" alt="">
+        <h3>lamha pyar</h3>
+    </div>   
+    <div class="box">
+        <img src="image/clojure.png" alt="">
+        <h3>lamha pyar</h3>
+    </div>   
+    <div class="box">
+        <img src="image/csharp.png" alt="">
+        <h3>lamha pyar</h3>
+    </div> 
+    <div class="box">
+        <img src="image/csharp.png" alt="">
+        <h3>lamha pyar</h3>
+    </div>
+    <div class="box">
+        <img src="image/csharp.png" alt="">
+        <h3>lamha pyar</h3>
+    </div>
+    <div class="box">
+        <img src="image/csharp.png" alt="">
+        <h3>lamha pyar</h3>
+    </div>
+    <div class="box">
+        <img src="image/csharp.png" alt="">
+        <h3>lamha pyar</h3>
+    </div>
+    <div class="box">
+        <img src="image/csharp.png" alt="">
+        <h3>lamha pyar</h3>
+    </div>       
+   </div> 
+</section>
 <script>
 
 
