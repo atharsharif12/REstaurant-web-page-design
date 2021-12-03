@@ -460,8 +460,24 @@ h2 {
 }
 @media(max-width:500px){
     .contact-form{
-        width: ;
-
+     padding: 0em;
+     width: fit-content;
+     padding: 1em 1em;   
+    }
+ .contact-form input{
+        margin: 0em;
+        width: 200px;
+    }
+    .contact-form label{
+        width: 200px;
+    }
+    .about-box img{
+        height: 100%;
+        width: 100%;
+    }
+    .about-box2{
+        height: 100%;
+        width: 100%;
     }
 }
 .contact-form h2{
