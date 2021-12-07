@@ -127,26 +127,26 @@ section{
     margin: 0.4em 0em;
     text-transform: capitalize;
 }
-.wave{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top:-100px;
-    background-color: red;
-    height: 100px;
-     animation: ath 6s linear infinite alternate;
+i{
+    font-size: 30px;
+    color:blue;
+    padding: 0.7em 0.3;
+    margin: 0.1em;
 }
-@keyframes ath{
-    0%{
-    height: 50px;
-    background-color: blue;   
-    }
-    100%{
-        background-position: 100px;
-        background-color: aqua;
-    }
+i:hover{
+    color:thistle;
+    transition: 0.8s;
 }
+
+.f1{
+    color:white;
+    text-transform: capitalize;
+    
+}
+.f1 p{
+    text-transform: capitalize;
+}
+
 
 @media(max-width:880px){
     .main{
