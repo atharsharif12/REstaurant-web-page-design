@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+@media(max-width:1000px)
+{
+.containet{
+    flex-direction: column;
+}
+}  
+    
+.containet{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1.6em 0em;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px #eee;
+    border-bottom: 10px solid rgb(219, 217, 217);
+    
+}
+.logo{
+    
+    padding-left: 0.3em;
+    font-size:1.4em;
+    color: wheat;
+    animation: asd 0.9s linear infinite alternate;
+    transition: 0.8s;
+    position: relative;
+}
+@keyframes asd{
+    from{
+        padding-left: 40px;
+        color:yellow;
+    }
+    to{
+        padding-right: 40px;
+        color: turquoise;
+    }
+} 
+
+.nav{
+    margin-top: 1em;
+}
+.nav a{
+    margin: 0.9em 1em;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0.3em 0.6em;
+    box-shadow: 0px 0px 17px #ddd;
+    color:rgb(14, 11, 12);
+    background-color: rgb(247, 241, 241);
+    border-radius: 7px;
+}
+.nav a:hover{
+    background-color: rgb(12, 11, 11);
+    color: rgb(248, 244, 244);
+    transition: 0.6s;
+    border-bottom: 2px solid white;
+}
+img{
+    height: 200px;
+    transform: rotate(0deg);
+    border-radius: 20px;
+    
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: turquoise;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+   height: 650px;
+    background-color: rgb(197, 201, 193);
+    justify-content: space-around;
+    align-items: center;
+}
+.main1 h2{
+    margin: 0.5em 0em;
+   
+}
+.main1 {
+    box-shadow: 0px 0px 20px #ddd;
+}
+.fot{
+    background-color: black;
+    padding: 2em 0em;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    
+}
+.fot h3{
+    color:aliceblue;
+}
+.fot-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.nav-fo a{
+    color:rgb(128, 51, 89);
+    padding: 0.4em;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    margin: 0.4em 0em;
+}
+.icon a{
+    color:hotpink;
+    padding: 0.4em;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 0.4em 0em;
+    text-transform: capitalize;
+}
+.wave{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:-100px;
+    background-color: red;
+    height: 100px;
+     animation: ath 6s linear infinite alternate;
+}
+@keyframes ath{
+    0%{
+    height: 50px;
+    background-color: blue;   
+    }
+    100%{
+        background-position: 100px;
+        background-color: aqua;
+    }
+}
+
+@media(max-width:880px){
+    .main{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+}
+
+
+
+
+@media(max-width:700px){
+    .nav a{
+        display: block;
+
+    }
+}
