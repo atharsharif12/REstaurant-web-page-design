@@ -87,13 +87,17 @@ section{
     background-color: rgb(197, 201, 193);
     justify-content: space-around;
     align-items: center;
+    text-align: center;
+    font-size: 1em;
 }
 .main1 h2{
     margin: 0.5em 0em;
-   
+    font-size: 1.2em;
+     
 }
 .main1 {
     box-shadow: 0px 0px 20px #ddd;
+    padding: 1em 3em;
 }
 .fot{
     background-color: black;
@@ -102,6 +106,20 @@ section{
     text-align: center;
     position: relative;
     
+}
+button{
+    background-color: red;
+    padding: 1em;
+    width: 160px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    margin-bottom: 1em;
+}
+@media(max-width:500px){
+    .fot{
+        height: 100%;
+    }
 }
 .fot h3{
     color:aliceblue;
@@ -124,8 +142,15 @@ section{
     padding: 0.4em;
     text-decoration: none;
     font-size: 1.1em;
-    margin: 0.4em 0em;
+    margin: 0.1em 0em;
     text-transform: capitalize;
+}
+button:hover{
+    background-color: antiquewhite;
+    color: black;
+    transition: 0.7s;
+    cursor: pointer;
+
 }
 i{
     font-size: 30px;
@@ -146,6 +171,76 @@ i:hover{
 .f1 p{
     text-transform: capitalize;
 }
+.contact{
+    height: 100%;
+    width: 100%;
+    padding: 2em 0em;
+    position: relative;
+    background:linear-gradient(rgb(12, 240, 12),rgb(145, 113, 104));
+
+}
+.contact-form{
+    
+     /* /text-align: center; */
+    padding: 15px 9%;
+    margin-top: 1em;
+   
+   
+
+ }
+ .contact-form h2{
+     text-align: center;
+     font-size: 2em;
+     color: white;
+     text-shadow: 1px 1px 1px gray;
+     text-transform: capitalize;
+    margin-bottom: 1em;
+ }
+ 
+.contact-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: gray;
+     width: fit-content; */
+   
+    
+ } 
+.contact-group input{
+   display: block;
+   width: 400px;
+   margin: auto;
+   padding: 0.8em 0.7em;
+   border-radius: 5px;
+   border: 1px solid #eee;
+}
+.contact-group button{
+    background-color: lightseagreen;
+    margin-top: 1em;
+    font-size: 1em;
+    padding: 0.7em 1em;
+    border: none;
+    outline: none;
+    
+    
+
+}
+
+.contact-group button:hover{
+    background-color: lightskyblue;
+    transition: 0.8s all;
+}
+.contact-group label{
+    width: 400px;
+    margin: auto;
+    padding: 0.4em 0em;
+    font-size: 1.2em;
+    text-transform: capitalize;
+
+} 
+
 
 
 @media(max-width:880px){
@@ -164,4 +259,12 @@ i:hover{
         display: block;
 
     }
+    .contact-group input{
+        width:230px;
+    }
+    .contact-group label{
+        width: 230px;
+        
+    }
+    
 }
