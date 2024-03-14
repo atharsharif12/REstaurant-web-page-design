@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choose any number and let see what happen</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+        }
+        p{
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-family: serif;
+            font-weight: 600;
+            font-size: 2rem;
+            margin: 3rem auto;
+            width: fit-content;
+            padding: 0.3em;
+            border-radius: 3px;
+            text-transform: capitalize;
+
+        }
+        .slect{
+            height: 200px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #value-add{
+           width: 200px;
+           height: 40px;
+           font-size: 2rem; 
+           background-color: blue;
+           color: white;
+           border-radius: 2px;
+           border: none;
+           position: relative;
+        }
+        
+        
+    </style>
+</head>
+<body>
+ <p id="paga">choose any number let's see what happen</p>
+ <div class="slect">
+ <select id="value-add">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+ </select>  
+</div>
+<script>
+selctoption = document.getElementById("value-add").value;
+paragraphtext = document.getElementById("paga");
+
+selctoption.addEventListener('change',()=>{
+  console.log(event.target.value);
+}
+
+)
+
+</script>
+</body>
+</html>

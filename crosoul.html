@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crosoul image with javascripts</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      img{
+          height:600px;
+          width:100%;
+          object-fit: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      } 
+      .btn{
+          position: absolute;
+          margin-left: 40%;
+          margin-top: 2em;
+          margin-bottom: 1em;
+          margin-right: 1em;
+      }
+      .btn button{
+        margin: 1em 1em;
+        width: 120px;
+        padding: 0.6em;
+        border: none;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body onload="change()">
+ 
+  <img src="image/b1 (2).jpg" name="slide">   
+  <div class="btn">
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+  </div>
+ <script>
+  var i=0;
+  var images = [];
+  var next = document.querySelector('#next');
+  var prev = document.querySelector('#prev');
+   images[0]  = 'image/gym1.jpg';
+   images[1]  = 'image/gym2.jpg';
+   images[2]  = 'image/gym3.jpg';
+   var time = 9000;
+   function change(){
+       document.slide.src = images[i];
+       if(i<images.length - 1){
+           i++;
+       }
+       else{
+           i=0;
+       }
+       setTimeout("change()",time);
+   }
+   next.addEventListener('click',function(){
+     document.slide.src = images[i];
+     if(i<images.length - 1){
+         i++;
+     }  
+     else{
+         i=0;
+     }
+   })
+   prev.addEventListener('click',function(){
+       document.slide.src = images[i];
+       if(i>images.length-1){
+           i--;
+       }
+       else{
+           i=0;
+       }
+   })   
+</script>   
+</body>
+</html>
